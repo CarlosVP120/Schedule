@@ -11,8 +11,8 @@ function Hero({handleLogout, email_id}) {
             <div className="color"></div>
             <div className="color"></div>
             <nav>
-                <h2>Welcome <span>{email_id}</span></h2>
-                <button onClick={handleLogout}>Logout</button>
+                <h2>Welcome <span></span></h2>
+                <button>Logout</button>
             </nav><br/>
             <div className="center">
                 <input type="checkbox" id="click" />
@@ -22,7 +22,7 @@ function Hero({handleLogout, email_id}) {
                     <h2 className="succlog">Login Succesful</h2>
                 </div>
                 <label for="click" className="fas fa-check">✔</label>
-                <p className="logedin">Welcome! {email_id}, you are now available to check your schedule.</p>
+                <p className="logedin">Welcome!, you are now available to check your schedule.</p>
                 <div className="line"></div>
                 <label for="click" className="close-btn">Close</label>
                 </div>

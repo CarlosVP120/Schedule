@@ -1,10 +1,16 @@
 import React from 'react';
 import Date from './date';
-import swal from 'sweetalert';
+import Swal from 'sweetalert2';
 
 function Hero({handleLogout, email_id}) {
 
-      swal("Good job!", "You clicked the button!", "success");
+    Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Login Successful',
+        showConfirmButton: false,
+        timer: 1500
+      })
 
     return (
         <section className="hero">

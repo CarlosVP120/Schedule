@@ -22,21 +22,22 @@ button {
   background: #603bbb;
   cursor: pointer;
   border-radius: 40px;
-  transition: 0.4s;
+  transition: 0.3s;
 }
 
 button:hover {
   background-color: rgb(255, 255, 255);
   color: #603bbb;
   width: 70%;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.404);
 }
 
 .login {
   width: 100%;
   min-height: 100vh;
-  padding: 0 20px;
-  background: black no-repeat;
+  background: url(./images/white.png) no-repeat;
   background-size: cover;
+  background-position: center;
   display: flex;
 }
 
@@ -59,13 +60,25 @@ button:hover {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   position: relative;
 }
+/*
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  padding: 0 20px;
+  backdrop-filter: blur(5px);
+  background: rgb(255, 255, 255, 0.1);
+  box-shadow: 0 25px 45px rgb(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  position: relative;
+  display: flex;
+} */
 
 .box {
   position: relative;
 }
 
 .login .loginContainer label {
-  color: white;
+  color: rgb(0, 0, 0);
   margin: 14px 0;
   display: block;
   font-size: 22px;
@@ -79,13 +92,18 @@ button:hover {
   font-size: 19px;
   padding: 10px;
   padding-left: 30px;
-  background: rgba(255, 255, 255, 0.2);
-  color: #fff;
+  background: rgba(24, 24, 24, 0.096);
+  color: rgb(0, 0, 0);
   letter-spacing: 1px;
   border-radius: 35px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  transition: 0.3s;
+}
+
+.login .loginContainer input:focus {
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.486);
 }
 
 .login .loginContainer .btnContainer {
@@ -97,7 +115,7 @@ button:hover {
 .login .loginContainer .btnContainer p {
   margin: 14px 0 0 0;
   text-align: center;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
 .login .loginContainer .btnContainer p span {
@@ -121,7 +139,9 @@ button:hover {
 .hero {
   width: 100%;
   min-height: 100vh;
-  background: rgb(192, 192, 192);
+  background: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/c3294b78330713.5ca21f44eb8f6.jpg);
+  background-size: cover;
+  background-position: center;
   transition: 0.4s;
 }
 
@@ -164,32 +184,98 @@ button:hover {
   background-color: whitesmoke;
 }
 
+.headButtons {
+  display: flex;
+}
+
+.canvas {
+  width: 86px;
+  padding: 8px 0;
+  background-color: #ffffff;
+  transition: 0.3s;
+  border: none;
+  outline: none;
+  color: rgb(218, 23, 23);
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 40px;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 8px;
+}
+
+.canvas:hover {
+  background-color: rgb(218, 23, 23);
+  color: white;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.404);
+}
+
+.mitec {
+  width: 86px;
+  padding: 8px 0;
+  background-color: #1841b1;
+  transition: 0.3s;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 40px;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 8px;
+}
+
+.mitec:hover {
+  background-color: rgb(218, 166, 23);
+  color: white;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.404);
+}
+
+.links {
+  display: flex;
+  margin-right: 30px;
+}
+
 .color {
   position: absolute;
   filter: blur(150px);
 }
 
-.color:nth-child(1) {
+.color:nth-child(2) {
   top: -350px;
   width: 600px;
   height: 600px;
   background: #ff359b;
+  opacity: 0;
 }
 
-.color:nth-child(2) {
+.color:nth-child(3) {
   bottom: -150px;
   left: 100px;
   width: 500px;
   height: 500px;
   background: #fffd87;
+  opacity: 0;
 }
 
-.color:nth-child(3) {
+.color:nth-child(4) {
   bottom: 50px;
   right: 100px;
   width: 300px;
   height: 300px;
   background: #00d2ff;
+  opacity: 0;
+}
+.color:nth-child(1) {
+  bottom: 50px;
+  right: 100px;
+  width: 300px;
+  height: 300px;
+  background: #00d2ff;
+  opacity: 0;
 }
 
 .square {
@@ -252,14 +338,14 @@ button:hover {
 }
 
 .title {
-  color: #fafafa;
+  color: #3d3d3d;
   font-size: 40px;
   font-weight: 900;
   align-items: center;
   text-align: center;
   margin-bottom: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.616);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.616);
 }
 
 .body {
@@ -275,7 +361,7 @@ button:hover {
   padding: 10px;
   padding-right: 20px;
   padding-left: 20px;
-  background-color: rgb(224, 224, 224, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-right: 1px solid rgba(255, 255, 255, 0.2);
@@ -298,7 +384,7 @@ button:hover {
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: rgb(224, 224, 224, 0.4);
+  background-color: rgba(0, 0, 0, 0.534);
   backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-right: 1px solid rgba(255, 255, 255, 0.2);
@@ -309,17 +395,17 @@ button:hover {
 }
 
 .content:hover {
-  background-color: #caa119de;
-  border-color: rgb(0, 0, 0);
+  background-color: rgba(0, 137, 216, 0.294);
+  border-color: rgb(10, 144, 233);
 }
 
 .App-clock {
-  color: #000000;
+  color: #e9c80a;
   text-align: center;
 }
 
 .content h2 {
-  color: rgb(63, 63, 63);
+  color: rgb(255, 255, 255);
 }
 
 .content a {
@@ -446,11 +532,50 @@ button:hover {
     padding: 0px;
     padding-left: 20px;
     padding-right: 20px;
+    width: 80%;
+    height: 100px;
+    font-size: 14px;
+    padding-top: 35px;
+  }
+
+  .content .classT {
+    margin-right: 20px;
+  }
+
+  .content a {
+    text-decoration: none;
+    color: rgb(221, 221, 221);
+    transition: 0.3s;
+    background-color: rgb(58, 125, 187);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 40px;
+  }
+
+  .content a:hover {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .rest {
+    height: 80px;
+    padding-top: 25px;
   }
 
   .content1 {
     margin-bottom: 10px;
     padding: 0;
+  }
+
+  .body {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
   }
 }
 
@@ -599,7 +724,7 @@ button:hover {
 }
 
 .swal-button:not([disabled]):hover {
-  background-color: #40795a;
+  background-color: #27ae60;
   color: #fff;
   border: none;
   box-shadow: none;

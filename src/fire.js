@@ -1,13 +1,13 @@
 import firebase from "firebase";
   
 var firebaseConfig = {
-  apiKey: "AIzaSyCr3kzNaVG13l13u58iaMT-MQxIrKeK9IY",
-  authDomain: "videochat-b3bea.firebaseapp.com",
-  projectId: "videochat-b3bea",
-  storageBucket: "videochat-b3bea.appspot.com",
-  messagingSenderId: "126758824926",
-  appId: "1:126758824926:web:bd337bbd05f5c5dc3bcb4f",
-  measurementId: "G-G3XJNNFM73"
+  apiKey: "AIzaSyAWfUfBXVVwXZqnCLhKbsKlJT9e0AgSN4s",
+  authDomain: "mycourseschedules.firebaseapp.com",
+  projectId: "mycourseschedules",
+  storageBucket: "mycourseschedules.appspot.com",
+  messagingSenderId: "291023482243",
+  appId: "1:291023482243:web:f248854f7893a10223dab6",
+  measurementId: "G-0C8BVYPC5X"
 };
 
 const fire = firebase.initializeApp(firebaseConfig);
